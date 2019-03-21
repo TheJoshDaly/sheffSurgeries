@@ -7,6 +7,8 @@ String medicine;
 double totalCost;
 Date dateIssued;
 Boolean patientPaying;
+Patient patientName;
+Doctor fullName;
     static constraints = {
 
         pharmacyName nullable: false
@@ -29,4 +31,6 @@ Boolean patientPaying;
         patientPaying nullable: false
         patientPaying blank: false
     }
+static belongsTo=[Doctor,Patient]
+
 }

@@ -9,6 +9,7 @@ String password;
 String doctorOffice;
 int doctorPhone;
 String bio;
+Prescription medicine;
     static constraints = {
 
         fullName nullable: false
