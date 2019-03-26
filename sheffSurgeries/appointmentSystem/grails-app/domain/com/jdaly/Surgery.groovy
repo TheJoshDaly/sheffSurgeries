@@ -7,7 +7,7 @@ String postcode;
 int telephone;
 int numberOfPatients;
 String description;
-Date openingTime;
+Time openingTime;
 
     static constraints = {
         name nullable: false

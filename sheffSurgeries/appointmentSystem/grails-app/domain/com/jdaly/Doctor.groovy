@@ -9,7 +9,7 @@ String password;
 String doctorOffice;
 int doctorPhone;
 String bio;
-Prescription medicine;
+Nurse nurseName;
     static constraints = {
 
         fullName nullable: false
@@ -38,4 +38,5 @@ Prescription medicine;
         bio blank: false
         bio widget: 'textarea'
     }
+    static belongsTo=[Nurse,Surgery]
 }

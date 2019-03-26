@@ -8,7 +8,6 @@ Date patientDob;
 String patientID;
 Date dateRegistered;
 int patientPhone;
-Prescription medicine;
     static constraints = {
 
         patientName nullable: false

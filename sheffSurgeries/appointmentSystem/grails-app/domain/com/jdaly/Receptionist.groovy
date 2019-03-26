@@ -6,6 +6,7 @@ String recepEmail;
 String recepUsername;
 String recepPassword;
 int recepPhone;
+Surgery name;
     static constraints = {
 
         recepName nullable: false
@@ -26,4 +27,5 @@ int recepPhone;
         recepPhone blank: false
         recepPhone unique: true
     }
+    static belongsTo=[Surgery]
 }

@@ -25,4 +25,5 @@ String nursePhone;
         nursePhone blank: false
         nursePhone unique: true
     }
+    static belongsTo=[Surgery,Doctor]
 }
