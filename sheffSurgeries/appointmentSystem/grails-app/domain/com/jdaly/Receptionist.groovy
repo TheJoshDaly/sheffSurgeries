@@ -6,7 +6,12 @@ String recepEmail;
 String recepUsername;
 String recepPassword;
 int recepPhone;
-Surgery name;
+
+
+String toString(){
+return recepName
+}
+
     static constraints = {
 
         recepName nullable: false

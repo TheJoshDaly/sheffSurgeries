@@ -9,7 +9,12 @@ String password;
 String doctorOffice;
 int doctorPhone;
 String bio;
-Nurse nurseName;
+
+
+String toString() {
+return fullName
+}
+
     static constraints = {
 
         fullName nullable: false
@@ -38,6 +43,6 @@ Nurse nurseName;
         bio blank: false
         bio widget: 'textarea'
     }
-    static belongsTo=[Surgery]
+    
 static hasMany=[prescriptions:Prescription,nurses:Nurse,patients:Patient]
 }

@@ -9,6 +9,9 @@ int numberOfPatients;
 String description;
 float openingTime;
 
+String ToString(){
+return name
+}
     static constraints = {
         name nullable: false
         name blank: false

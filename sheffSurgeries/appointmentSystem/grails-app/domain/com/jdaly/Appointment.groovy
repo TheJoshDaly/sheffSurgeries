@@ -5,6 +5,11 @@ Date appDate;
 float appTime;
 int appDuration;
 String roomNumber;
+
+String toString(){
+return appDate
+}
+
     static constraints = {
 
         appDate nullable: false

@@ -7,8 +7,12 @@ String medicine;
 double totalCost;
 Date dateIssued;
 Boolean patientPaying;
-Patient patientName;
-Doctor fullName;
+
+
+String toString(){
+return pharmacyName
+}
+
     static constraints = {
 
         pharmacyName nullable: false
