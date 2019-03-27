@@ -9,7 +9,8 @@ String password;
 String doctorOffice;
 int doctorPhone;
 String bio;
-
+static hasMany=[prescriptions:Prescription,nurses:Nurse,patients:Patient]
+static belongsTo=[Patient,Surgery,Prescription]
 
 String toString() {
 return fullName
@@ -44,5 +45,5 @@ return fullName
         bio widget: 'textarea'
     }
     
-static hasMany=[prescriptions:Prescription,nurses:Nurse,patients:Patient]
+
 }

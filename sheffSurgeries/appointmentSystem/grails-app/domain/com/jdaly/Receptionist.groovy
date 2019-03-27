@@ -6,7 +6,7 @@ String recepEmail;
 String recepUsername;
 String recepPassword;
 int recepPhone;
-
+static belongsTo=[Surgery]
 
 String toString(){
 return recepName
@@ -32,5 +32,5 @@ return recepName
         recepPhone blank: false
         recepPhone unique: true
     }
-    static belongsTo=[Surgery]
+    
 }

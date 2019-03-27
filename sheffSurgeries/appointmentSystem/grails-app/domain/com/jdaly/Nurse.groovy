@@ -6,7 +6,8 @@ String qualifications;
 String nurseEmail;
 String nurseOffice;
 String nursePhone;
-
+static hasMany=[doctors:Doctor]
+static belongsTo=[Surgery,Doctor]
 
 String toString() {
 return nurseName
@@ -31,5 +32,4 @@ return nurseName
         nursePhone unique: true
     }
     
-static hasMany=[doctors:Doctor]
 }

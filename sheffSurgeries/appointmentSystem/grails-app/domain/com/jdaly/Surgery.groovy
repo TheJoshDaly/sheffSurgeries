@@ -8,8 +8,8 @@ int telephone;
 int numberOfPatients;
 String description;
 float openingTime;
-
-String ToString(){
+static hasMany=[receptionists:Receptionist,doctors:Doctor,nurses:Nurse,patients:Patient]
+String toString(){
 return name
 }
     static constraints = {
@@ -36,5 +36,4 @@ return name
         openingTime nullable: false
         openingTime blank: false
     }
-static hasMany=[receptionsts:Receptionist,doctors:Doctor,nurses:Nurse,patients:Patient,appointments:Appointment]
 }

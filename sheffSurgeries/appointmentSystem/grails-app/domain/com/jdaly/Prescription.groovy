@@ -35,7 +35,7 @@ return pharmacyName
         patientPaying nullable: false
         patientPaying blank: false
     }
-static belongsTo=[Patient]
+
 
 
 }

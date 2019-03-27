@@ -5,7 +5,8 @@ Date appDate;
 float appTime;
 int appDuration;
 String roomNumber;
-
+static hasMany=[surgerys:Surgery]
+static belongsTo=[Surgery,Doctor]
 String toString(){
 return appDate
 }
@@ -26,6 +27,5 @@ return appDate
         roomNumber blank: false
 
     }
-    static belongsTo=[Patient]
-static hasMany=[doctors:Doctor]
+
 }

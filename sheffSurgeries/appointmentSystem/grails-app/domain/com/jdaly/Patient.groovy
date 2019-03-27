@@ -8,7 +8,8 @@ Date patientDob;
 String patientID;
 Date dateRegistered;
 String patientPhone;
-
+static hasMany=[surgerys:Surgery,prescriptions:Prescription,doctors:Doctor]
+static belongsTo=[Surgery,Prescription]
 String toString(){
 return patientName
 }
@@ -37,5 +38,5 @@ return patientName
         patientPhone blank: false
         patientPhone unique: true
     }
-static hasMany=[surgeries:Surgery,prescriptions:Prescription,doctors:Doctor]
+
 }

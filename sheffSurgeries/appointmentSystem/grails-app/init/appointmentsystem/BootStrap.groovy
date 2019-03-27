@@ -64,6 +64,9 @@ totalCost: 5.90,
 dateIssued: new Date('25/05/2019'),
 patientPaying: 'yes'    		
     		).save() 
+
+
+
     }
     def destroy = {
     }
