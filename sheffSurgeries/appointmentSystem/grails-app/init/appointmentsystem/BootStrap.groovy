@@ -1,4 +1,4 @@
-package appointmentsystem
+package com.jdaly
 
 class BootStrap {
 
@@ -10,7 +10,7 @@ postcode: 'S10 1NG',
 telephone: '0114555555',
 numberOfPatients: '50',
 description: 'Use placeholder text',
-openingTime: new Time('09:00')
+openingTime: '09.00'
     		).save()
 
     	def sarah = new Doctor (
@@ -23,16 +23,14 @@ doctorOffice: 'D-9888',
 doctorPhone: '01111777',
 bio: 'Use placeholder text'
     		).save()
-
-    	def tom = new Patient (
-patientName: 'Tom Rivers',
-patientAddress: '2 One Way Street, Eckington',
-patientResidence: 'Sheffield, Barnsley, Doncaster',
-patientDob: new Date('20/09/1988'),
-patientID: 'E25555',
-dateRegistered: new Date('26/02/2018'),
-patientPhone: '01142224444'
-    		).save()
+def McDevvo = new Patient (
+patientName: 'MC Devvo',
+patientAddress: '1101 Hallam Hills',
+patientResidence: 'Sheffield',
+patientDob: new Date('09/07/2019'),
+patientId: '46843545',
+dateRegistered: new Date ('20/06/2015'),
+patientPhone: '07791239239').save()
     	def rob = new Receptionist (
 recepName: 'Rob Kingston',
 recepEmail: 'r.kingston@email.com',
@@ -47,9 +45,9 @@ nurseEmail: 's.peters@myemail.com',
 nurseOffice: 'B-455',
 nursePhone: '01142224433'    		
     		).save()
-    	def appntmnt = new Appointment (
+    	def appntmnts = new Appointment(
 appDate: new Date('11/04/2019'),
-appTime: new Time('15:00'),
+appTime: '15.00',
 appDuration: '30..45..60',
 roomNumber: 'A-1111'    		
     		).save()

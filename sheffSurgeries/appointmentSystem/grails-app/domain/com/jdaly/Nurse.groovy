@@ -25,5 +25,6 @@ String nursePhone;
         nursePhone blank: false
         nursePhone unique: true
     }
-    static belongsTo=[Surgery,Doctor]
+    static belongsTo=[Surgery]
+static hasMany=[nurses:Nurse]
 }

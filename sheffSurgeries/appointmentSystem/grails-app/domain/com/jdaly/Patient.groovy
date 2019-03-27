@@ -33,4 +33,5 @@ int patientPhone;
         patientPhone blank: false
         patientPhone unique: true
     }
+static hasMany=[surgeries:Surgery,prescriptions:Prescription,doctors:Doctor]
 }

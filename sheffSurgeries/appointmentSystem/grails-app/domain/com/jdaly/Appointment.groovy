@@ -2,7 +2,7 @@ package com.jdaly
 
 class Appointment {
 Date appDate;
-Time appTime;
+float appTime;
 int appDuration;
 String roomNumber;
     static constraints = {
@@ -21,5 +21,6 @@ String roomNumber;
         roomNumber blank: false
 
     }
-    static belongsTo=[Patient,Doctor,Surgery]
+    static belongsTo=[Patient]
+static hasMany=[doctors:Doctor]
 }

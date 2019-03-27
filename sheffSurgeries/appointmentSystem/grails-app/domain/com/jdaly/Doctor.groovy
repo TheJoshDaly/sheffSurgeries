@@ -38,5 +38,6 @@ Nurse nurseName;
         bio blank: false
         bio widget: 'textarea'
     }
-    static belongsTo=[Nurse,Surgery]
+    static belongsTo=[Surgery]
+static hasMany=[prescriptions:Prescription,nurses:Nurse,patients:Patient]
 }

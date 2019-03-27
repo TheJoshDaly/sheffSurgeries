@@ -31,6 +31,7 @@ Doctor fullName;
         patientPaying nullable: false
         patientPaying blank: false
     }
-static belongsTo=[Doctor,Patient]
+static belongsTo=[Patient]
+
 
 }

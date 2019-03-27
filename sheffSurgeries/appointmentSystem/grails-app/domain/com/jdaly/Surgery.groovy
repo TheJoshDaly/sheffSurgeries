@@ -7,7 +7,7 @@ String postcode;
 int telephone;
 int numberOfPatients;
 String description;
-Time openingTime;
+float openingTime;
 
     static constraints = {
         name nullable: false
@@ -33,4 +33,5 @@ Time openingTime;
         openingTime nullable: false
         openingTime blank: false
     }
+static hasMany=[receptionsts:Receptionist,doctors:Doctor,nurses:Nurse,patients:Patient,appointments:Appointment]
 }
