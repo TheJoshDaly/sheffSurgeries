@@ -22,6 +22,11 @@ class NurseController {
         respond new Nurse(params)
     }
 
+def login() {
+
+
+}
+
     def save(Nurse nurse) {
         if (nurse == null) {
             notFound()

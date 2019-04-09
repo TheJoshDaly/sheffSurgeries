@@ -22,6 +22,11 @@ class PatientController {
         respond new Patient(params)
     }
 
+def login() {
+
+
+}
+
     def save(Patient patient) {
         if (patient == null) {
             notFound()

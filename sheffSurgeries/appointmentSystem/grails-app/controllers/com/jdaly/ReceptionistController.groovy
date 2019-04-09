@@ -22,6 +22,11 @@ class ReceptionistController {
         respond new Receptionist(params)
     }
 
+def login() {
+
+
+}
+
     def save(Receptionist receptionist) {
         if (receptionist == null) {
             notFound()

@@ -10,7 +10,7 @@ String doctorOffice;
 int doctorPhone;
 String bio;
 static hasMany=[prescriptions:Prescription,nurses:Nurse,patients:Patient]
-static belongsTo=[Patient,Surgery,Prescription]
+static belongsTo=[Patient,Surgery,Prescription,Nurse]
 
 String toString() {
 return fullName

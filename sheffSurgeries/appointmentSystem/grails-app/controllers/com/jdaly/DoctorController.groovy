@@ -22,6 +22,33 @@ class DoctorController {
         respond new Doctor(params)
     }
 
+def login() {
+
+
+}
+
+def validate() {
+def user = Doctor.findByUsername(params.fullName)
+
+if (fullName && Doctor.Password == params.password){
+
+session.user = Doctor
+
+render view:'home'
+}
+else{
+
+flash.message = "Invalid username and password."
+
+render view:'login'
+
+}
+}
+
+def logout = {
+session.user = null
+redirect(uri:'/')
+}
     def save(Doctor doctor) {
         if (doctor == null) {
             notFound()

@@ -33,6 +33,9 @@
         <g:link controller="Nurse" action="create" class="nav-link active">Add Nurse</g:link>
       </li>
       <li class="nav-item">
+        <g:link controller="Patient" action="create" class="nav-link active">Add Patient</g:link>
+      </li>
+      <li class="nav-item">
    <g:link controller="Surgery" action="create" class="nav-link active">Add Surgery</g:link>
       </li>
       <li class="nav-item">
