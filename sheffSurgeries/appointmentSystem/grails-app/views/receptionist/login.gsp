@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta name="layout" content="main"/>
-<title>Login as a Doctor</title>
+<title>Login as a Receptionist</title>
 </head>
 
 <asset:link rel="icon" href="favicon.ico" type="image/x-ico"/>
@@ -19,17 +19,17 @@
 <table>
 <tr class="prop">
 <td class="name">
-<label for="fullName">Enter your full name: </label>
+<label for="recepUsername">Enter your Username: </label>
 </td>
 <td class="value">
-<input type="text" id="fullName" name="fullName" value="">
+<input type="text" id="recepUsername" name="recepUsername" value="">
 </td></tr>
 <tr class="prop">
 <td class="password">
-<label for="password">Enter your password: </label>
+<label for="recepPassword">Enter your password: </label>
 </td>
 <td class="value">
-<input type="password" id="password" name="password" value="">
+<input type="password" id="recepPassword" name="recepPassword" value="">
 </td></tr>
 <tr><td></td>
 <td>

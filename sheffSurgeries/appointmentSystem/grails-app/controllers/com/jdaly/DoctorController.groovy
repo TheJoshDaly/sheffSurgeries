@@ -28,11 +28,11 @@ def login() {
 }
 
 def validate() {
-def user = Doctor.findByUsername(params.fullName)
+def user = Doctor.findByFullName(params.fullName)
 
-if (fullName && Doctor.Password == params.password){
+if (user && user.password == params.password){
 
-session.user = Doctor
+session.user = user
 
 render view:'home'
 }

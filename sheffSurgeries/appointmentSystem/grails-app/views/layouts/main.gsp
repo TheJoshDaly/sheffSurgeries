@@ -44,11 +44,16 @@
       <li class="nav-item">
         <g:link controller="Prescription" action="create" class="nav-link active">Add Prescription</g:link>
       </li>
+<li class="nav-item">
+<g:loginToggle />
+</li>
+<li class="nav-item">
+<g:loginToggleForReceptionist />
+</li>
 </ul>
 </section> 
   </div>
 </nav>
-
 
 <g:layoutBody/>
 
