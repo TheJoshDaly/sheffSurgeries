@@ -3,7 +3,7 @@ package com.jdaly
 class BootStrap {
 
    def init = { servletContext ->
-/* 
+ 
 def cityhealth = new Surgery (
 name: 'City Health Centre',
 address: '21 Marble Street, Sheffield',
@@ -130,7 +130,7 @@ patientPaying: 'yes'
 
 
 
-    */}
+    }
     def destroy = {
     }
 }
