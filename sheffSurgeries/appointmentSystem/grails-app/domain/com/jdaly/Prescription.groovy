@@ -8,6 +8,8 @@ double totalCost;
 Date dateIssued;
 Boolean patientPaying;
 
+static hasMany=[doctors:Doctor]
+static belongsTo=[Doctor]
 
 String toString(){
 return pharmacyName

@@ -19,10 +19,10 @@
 <table>
 <tr class="prop">
 <td class="name">
-<label for="fullName">Enter your full name: </label>
+<label for="doctorEmail">Enter your Email: </label>
 </td>
 <td class="value">
-<input type="text" id="fullName" name="fullName" value="">
+<input type="text" id="doctorEmail" name="doctorEmail" value="">
 </td></tr>
 <tr class="prop">
 <td class="password">

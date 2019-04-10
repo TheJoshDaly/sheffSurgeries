@@ -28,7 +28,7 @@ def login() {
 }
 
 def validate() {
-def user = Doctor.findByFullName(params.fullName)
+def user = Doctor.findByDoctorEmail(params.doctorEmail)
 
 if (user && user.password == params.password){
 
