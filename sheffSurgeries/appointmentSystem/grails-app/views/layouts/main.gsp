@@ -16,44 +16,6 @@
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-<a class="home navbar-brand" href="${createLink(uri: '/')}">Sheff Surgeries</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-    <section class="row colset-2-its">
-            <ul class="navbar-nav mr auto">
-      <li class="nav-item">
-        <g:link controller="Appointment" action="create" class="nav-link active">Set an Appointment</g:link>
-      </li>
-      <li class="nav-item">
-        <g:link controller="Doctor" action="create" class="nav-link active">Add Doctor</g:link>
-      </li>
-      <li class="nav-item">
-        <g:link controller="Nurse" action="create" class="nav-link active">Add Nurse</g:link>
-      </li>
-      <li class="nav-item">
-        <g:link controller="Patient" action="create" class="nav-link active">Add Patient</g:link>
-      </li>
-      <li class="nav-item">
-   <g:link controller="Surgery" action="create" class="nav-link active">Add Surgery</g:link>
-      </li>
-      <li class="nav-item">
-<g:link controller="Receptionist" action="create" class="nav-link active">Add Receptionist</g:link>
-      </li>
-      <li class="nav-item">
-        <g:link controller="Prescription" action="create" class="nav-link active">Add Prescription</g:link>
-      </li>
-<li class="nav-item">
-<g:loginToggle />
-</li>
-<li class="nav-item">
-<g:loginToggleForReceptionist />
-</li>
-</ul>
-</section> 
-  </div>
-</nav>
 
 <g:layoutBody/>
 

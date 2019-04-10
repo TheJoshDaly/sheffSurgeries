@@ -14,24 +14,28 @@
     <section class="row colset-2-its">
             <ul class="navbar-nav mr auto">
       <li class="nav-item">
-        <g:link controller="Appointment" action="index" class="nav-link active">View Appointments</g:link>
+        <g:link controller="Doctor" action="create" class="nav-link active">Add Doctor</g:link>
       </li>
       <li class="nav-item">
-        <g:link controller="Patient" action="index" class="nav-link active">View Patients</g:link>
+        <g:link controller="Nurse" action="create" class="nav-link active">Add Nurse</g:link>
+      </li>
+      <li class="nav-item">
+        <g:link controller="Patient" action="create" class="nav-link active">Add Patient</g:link>
+      </li>
+      <li class="nav-item">
+   <g:link controller="Surgery" action="create" class="nav-link active">Add Surgery</g:link>
+      </li>
+      <li class="nav-item">
+<g:link controller="Receptionist" action="create" class="nav-link active">Add Receptionist</g:link>
       </li>
       <li class="nav-item">
         <g:link controller="Prescription" action="create" class="nav-link active">Add Prescription</g:link>
       </li>
-      <li class="nav-item">
-        <g:link controller="Prescription" action="index" class="nav-link active">View Prescriptions</g:link>
-      </li>
 <li class="nav-item">
-<g:loginToggle />
+<g:loginToggleForReceptionist />
 </li>
 </ul>
-</section> 
-  </div>
-</nav>
+
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
